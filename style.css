@@ -1,0 +1,275 @@
+body {
+    font-family: "DM Serif Text", serif;
+    font-style: normal;
+    overflow: hidden;
+    padding: 0 10%;
+    height: 100vh;
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    gap: 50px;
+    animation: topIn 1.4s ease-in-out forwards;
+    opacity: 0;
+    animation-delay: 0.3s;
+}
+
+.active {
+    color: #55bd66;
+    text-decoration: none;
+}
+
+.inactive {
+    text-decoration: none;
+    color: grey;
+}
+
+nav {
+    flex: 1;
+    display: flex;
+    gap: 70px;
+    align-items: center;
+}
+
+.item {
+    font-size: 18px;
+    font-weight: 500;
+    letter-spacing: 1px;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+.header-logo {
+    font-family: "Sour Gummy", serif;
+    font-weight: 600;
+    font-size: 40px;
+    color: rgb(0, 0, 0);
+}
+
+.item:hover {
+    color: #468550;
+}
+
+hr {
+    border: none;
+    border-top: 1px solid rgb(0, 0, 0);
+    width: 100%;
+    animation: topIn 1.4s ease-in-out forwards;
+    opacity: 0;
+    animation-delay: 0.2s;
+}
+
+.header-button {
+    border: none;
+    border-radius: 15px;
+    padding: 10px;
+    height: 45px;
+    width: 200px;
+    font-size: 16px;
+    font-weight: 600;
+    background-color: #55bd66;
+    color: white;
+    letter-spacing: 1px;
+}
+
+.header-button:hover {
+    background-color: white;
+    color: #55bd66;
+    border: 1px solid #55bd66;
+}
+
+h2 {
+    font-size: 50px;
+    font-weight: 400;
+    margin-left: 50px;
+    margin-top: 80px;
+    letter-spacing: 0.1px;
+    animation: bottomIn 1.4s ease-in-out forwards;
+    opacity: 0;
+    animation-delay: 0.2s;
+}
+
+h1 {
+    color: #55bd66;
+    font-size: 80px;
+    font-weight: 600;
+    margin-left: 50px;
+    margin-top: -50px;
+    letter-spacing: 5px;
+    animation: bottomIn 1.4s ease-in-out forwards;
+    opacity: 0;
+    animation-delay: 0.3s;
+}
+
+p {
+    color: rgb(128, 128, 128);
+    font-size: 24px;
+    margin-left: 50px;
+    margin-top: -30px;
+    letter-spacing: 0.1px;
+    animation: bottomIn 1.4s ease-in-out forwards;
+    opacity: 0;
+    animation-delay: 0.4s;
+}
+
+.buttons {
+    border: none;
+    border-radius: 15px;
+    padding: 10px;
+    margin-left: 50px;
+    margin-top: 20px;
+    height: 45px;
+    width: 300px;
+    font-size: 16px;
+    font-weight: 600;
+    background-color: #55bd66;
+    color: white;
+    letter-spacing: 1px;
+    animation: bottomIn 1.4s ease-in-out forwards;
+    opacity: 0;
+    animation-delay: 0.5s;
+}
+
+.buttons:hover {
+    background-color: white;
+    color: #55bd66;
+    border: 1px solid #55bd66;
+}
+
+.icon {
+    align-items: center;
+    fill: white;
+    width: 20px;
+    position: absolute;
+    padding-left: 5px;
+}
+
+.showcase {
+    width: 500px;
+    aspect-ratio: 16/9;
+    animation: leftIn 1.4s ease-in-out forwards;
+    opacity: 0;
+    animation-delay: 1s;
+}
+
+.projects {
+    margin-top: 50px;
+    margin-left: -50px;
+    text-align: center;
+}
+
+.wrap {
+    margin-left: 135px;
+}
+
+.twitter1 {
+    margin-top: 25px;
+    font-size: 36px;
+    text-align: center;
+}
+
+.contact {
+    color: black;
+    margin-top: 50px;
+    font-size: 36px;
+    text-align: center;
+}
+
+.discord {
+    color: #557fbd;
+}
+
+.twitter {
+    color: #3374d6;
+}
+
+.roblox {
+    color: #d33d3d;
+}
+
+@keyframes bottomIn {
+    from {
+        transform: translateY(250px);
+    }
+    to {
+        transform: translateY(0px);
+        opacity: 1;
+    }
+}
+
+@keyframes topIn {
+    from {
+        transform: translateY(-100px);
+    }
+    to {
+        transform: translateY(0px);
+        opacity: 1;
+    }
+}
+
+@keyframes leftIn {
+    from {
+        transform: translateX(-100px);
+    }
+    to {
+        transform: translateY(0px);
+        opacity: 1;
+    }
+}
+
+@media screen and (max-width: 428px) {
+    body {
+        padding: 0 3%;
+        overflow: visible;
+    }
+    .header {
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+    }
+    nav {
+        flex-direction: column;
+        gap: 20px;
+    }
+    .content {
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+    }
+    h2 {
+        font-size: 36px;
+        margin-left: 10px;
+    }
+    
+    h1 {
+        font-size: 50px;
+        margin-left: 10px;
+    }
+    
+    p {
+        font-size: 20px;
+        margin-left: 10px;
+    }
+    .buttons {
+        margin-top: -15px;
+    }
+    .showcase {
+        display: flex;
+        flex: 1;
+        margin-left: 15%;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        width: 250px;
+    }
+    .twitter1 {
+        font-size: 24px;
+    }
+    .contact {
+        display: flex;
+        flex: 1;
+        flex-direction: column;
+        font-size: 24px;
+    }
+}
